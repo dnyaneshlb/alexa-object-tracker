@@ -1,0 +1,103 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "object tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "to cancel",
+                        "to stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "help me locate things",
+                        "help me track things",
+                        "how to use"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "to cancel",
+                        "to stop"
+                    ]
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "object",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "where is {object}",
+                        "where is my {object}",
+                        "what is {object}",
+                        "what is my {object}",
+                        "where I have kept {object}",
+                        "where I have placed {object}",
+                        "where I have kept my {object}",
+                        "where I have placed my {object}"
+                    ]
+                },
+                {
+                    "name": "SaveNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "something",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "test",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "keep in mind that {test}",
+                        "remember that {test}",
+                        "keeping {test}"
+                    ]
+                },
+                {
+                    "name": "ValidatePasskeyIntent",
+                    "slots": [
+                        {
+                            "name": "passkey",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "passkey is {passkey}"
+                    ]
+                },
+                {
+                    "name": "RemoveObjectIntent",
+                    "slots": [
+                        {
+                            "name": "thingtoremove",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "remove {thingtoremove}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "repeat that",
+                        "can you repeat once again",
+                        "can you say again",
+                        "say again"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
